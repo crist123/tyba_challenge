@@ -1,0 +1,696 @@
+{
+	"info": {
+		"_postman_id": "87bfea19-6c9a-4586-8d8b-4a973e25a4a5",
+		"name": "Tyba challenge doc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4188567"
+	},
+	"item": [
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "Get all roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles?page=1&limit=10",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add roles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"name ejemplo\",\n\t\"key\": \"key ejemplo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update roles",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"name ejemplo\",\n\t\"key\": \"key ejemplo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete roles",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "roles_user",
+			"item": [
+				{
+					"name": "Get all roles_user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles_user?page=1&limit=10",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles_user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one roles_user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles_user/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles_user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add roles_user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"userId ejemplo\",\n\t\"roleId\": \"roleId ejemplo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles_user",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update roles_user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"userId\": \"userId ejemplo\",\n\t\"roleId\": \"roleId ejemplo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles_user/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles_user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete roles_user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/roles_user/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"roles_user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transactions",
+			"item": [
+				{
+					"name": "Get all transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/transactions?page=1&limit=10",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/transactions/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"transactions",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add transactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"coordinates\": \"4.575683,-74.115945\",\n    \"radius\": 800,\n\t\"city\": \"bogota,colombia\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/transactions",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete transactions",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/transactions/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"transactions",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/users?page=1&limit=10",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/users/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"name ejemplo\",\n\t\"email\": \"email ejemplo\",\n\t\"password\": \"password ejemplo\",\n\t\"status\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/users",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update users",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"name ejemplo\",\n\t\"email\": \"email ejemplo\",\n\t\"password\": \"password ejemplo\",\n\t\"status\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/users/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_host}}/tyba/api/users/:id",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"cristianfajardo3@gmail.com\",\n    \"pass\": \"qwerty\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/auth/login",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Andres Fajardo\",\n    \"email\": \"cristianfajardo30@gmail.com\",\n    \"pass\": \"qwerty\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/auth/register",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_host}}/tyba/api/auth/logout",
+							"host": [
+								"{{url_host}}"
+							],
+							"path": [
+								"tyba",
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpdXMiOiIyZGEwNDY5Mi1hZjI5LTQ0MzUtYmYxZS1hM2E5YzMwN2ZjNmQiLCJycyI6InVzZXIiLCJpYXQiOjE2NTU1ODM4MzQsImV4cCI6MTY1ODE3NTgzNH0.lm6CYfTOozziqc7fOcqCV2nxdQy1kmDyWL1QRmxJ0nY",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url_host",
+			"value": "http://localhost:4000"
+		}
+	]
+}
